@@ -244,10 +244,13 @@ print("Hello", "World", sep="-")             # Hello-World
 print("Hello", end="...")                    # Hello...
 ```
 
-## Keywords
+## Keywords(35 keywords)
 
 Keywords are reserved words in Python that have special meaning and cannot be used as identifiers (variable names, function names, etc.). They form the syntax and structure of the language. Here are some commonly used Python keywords:
 
+-**False/None/True**
+-**and/as/async/await**
+-**in/is/not/or**
 - **if / else / elif**  
   Used for conditional branching. Executes code blocks based on conditions.
 
@@ -293,12 +296,125 @@ Keywords are reserved words in Python that have special meaning and cannot be us
 - **yield**  
   Used inside functions to make them generators.
 
+
 This is not an exhaustive list but covers the most frequently used keywords in Python.
 
+##  📦 Modules & Packages
+
+---
+
+### 📄 Module Explanation
+
+A **module** in Python is any `.py` file that contains Python code.  
+It is used to organize code logically and reuse it across different programs.
+
+#### 🧾 What a Module Can Contain:
+
+- 🔢 **Variables**
+- 🧮 **Functions**
+- 🧱 **Classes**
+
+#### 🧪 Example:
+
+```python
+# math_utils.py
+PI = 3.14159
+
+def square(x):
+    return x * x
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
 
 
+---
 
-# DataTypes
+## 🗂️ Package Explanation
+
+```md
+## 🗂️ Package Explanation
+
+A **package** is a directory (folder) that contains multiple Python **modules** and a special file named `__init__.py`.
+
+### 📁 Structure of a Package
+
+my_package/
+├── init.py
+├── module1.py
+└── module2.py
+
+- `__init__.py` makes Python treat the folder as a package.
+- The package helps you organize related modules together.
+
+### 🧪 Example Usage
+
+```python
+from my_package import module1
+module1.function_from_module1()
+
+---
+
+## 📦 Module vs 🗂️ Package
+
+```md
+## 📦 Module vs 🗂️ Package
+
+| Feature         | Module                      | Package                                 |
+|-----------------|-----------------------------|------------------------------------------|
+| Definition      | A single `.py` file         | A folder containing multiple modules     |
+| Contains        | Variables, functions, class | Modules and `__init__.py` file           |
+| Usage           | `import module_name`        | `from package import module`             |
+| Purpose         | Reusable code unit          | Organizing multiple related modules      |
+
+## ⚙️ Operators
+
+### Types of Operators in Python
+
+> **Note:** Python does **NOT** have increment (`++`) or decrement (`--`) operators.
+
+1. **Arithmetic Operators**  
+   Used for mathematical operations.  
+   Examples: `+`, `-`, `*`, `/`, `%`, `//` (floor division), `**` (exponentiation)
+
+2. **Comparison (Relational) Operators**  
+   Used to compare values and return a Boolean result.  
+   Examples: `==`, `!=`, `>`, `<`, `>=`, `<=`
+
+3. **Logical Operators**  
+   Used to combine conditional statements.  
+   Examples: `and`, `or`, `not`
+
+4. **Assignment Operators**  
+   Used to assign values to variables, sometimes combined with arithmetic.  
+   Examples: `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `//=` , `**=`
+
+5. **Bitwise Operators**  
+   Operate on bits of integers.  
+   Examples: `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<` (left shift), `>>` (right shift)
+
+6. **Membership Operators**  
+   Test membership in a sequence (like strings, lists, tuples).  
+   Examples: `in`, `not in`
+
+7. **Identity Operators**  
+   Compare the memory locations of two objects.  
+   Examples: `is`, `is not`
+
+### 🆔 The `id()` Function
+
+- The `id()` function returns the **unique identity** (memory address) of an object in Python.
+- This identity is constant during the object’s lifetime.
+- Useful to check if two variables point to the **same object**.
+
+**Syntax:**
+
+```python
+id(object)
+
+
+# 2. Data Types
+
 
 Python provides various built-in data types to store different kinds of data. Here is a brief explanation of the most commonly used ones:
 

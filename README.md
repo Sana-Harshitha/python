@@ -244,3 +244,93 @@ print("Hello", "World", sep="-")             # Hello-World
 print("Hello", end="...")                    # Hello...
 ```
 
+## Keywords
+
+Keywords are reserved words in Python that have special meaning and cannot be used as identifiers (variable names, function names, etc.). They form the syntax and structure of the language. Here are some commonly used Python keywords:
+
+- **if / else / elif**  
+  Used for conditional branching. Executes code blocks based on conditions.
+
+- **for / while**  
+  Used for looping/repeating actions.
+
+- **break**  
+  Terminates the nearest enclosing loop.
+
+- **continue**  
+  Skips the rest of the current loop iteration and moves to the next iteration.
+
+- **def**  
+  Used to define a function.
+
+- **return**  
+  Exits a function and optionally returns a value.
+
+- **class**  
+  Used to define a class (for object-oriented programming).
+
+- **import / from**  
+  Used to import modules or specific components from modules.
+
+- **try / except / finally**  
+  Used for handling exceptions (errors) and cleaning up.
+
+- **pass**  
+  A null statement used as a placeholder where code will eventually go.
+
+- **with**  
+  Used for resource management (e.g., opening files).
+
+- **lambda**  
+  Defines an anonymous (inline) function.
+
+- **global / nonlocal**  
+  Used to declare variables’ scope.
+
+- **assert**  
+  Used for debugging to check conditions.
+
+- **yield**  
+  Used inside functions to make them generators.
+
+This is not an exhaustive list but covers the most frequently used keywords in Python.
+
+
+
+
+# DataTypes
+
+Python provides various built-in data types to store different kinds of data. Here is a brief explanation of the most commonly used ones:
+
+- **int**  
+  Represents integer numbers, both positive and negative, without a decimal point.  
+  *Example:* `5`, `-10`, `1000`
+
+- **float**  
+  Represents decimal (floating-point) numbers.  
+  *Example:* `3.14`, `-0.001`, `2.0`
+
+- **str**  
+  Represents a sequence of characters (text). Strings are enclosed in single, double, or triple quotes.  
+  *Example:* `"Hello, World!"`, `'Python'`
+
+- **bool**  
+  Represents Boolean values, which can be either `True` or `False`. Used for logical operations and conditions.
+
+- **list**  
+  An ordered, mutable collection of items that can hold elements of different data types. Defined using square brackets.  
+  *Example:* `[1, "apple", 3.14]`
+
+- **tuple**  
+  An ordered, immutable collection of items, similar to lists but cannot be changed after creation. Defined using parentheses.  
+  *Example:* `(10, 20, 30)`
+
+- **set**  
+  An unordered collection of unique elements. Useful for removing duplicates and performing set operations like union and intersection. Defined using curly braces or the `set()` function.  
+  *Example:* `{1, 2, 3}`
+
+- **dict**  
+  A collection of key-value pairs, where each key is unique. Useful for storing data with labels. Defined using curly braces.  
+  *Example:* `{"name": "Alice", "age": 25}`
+
+

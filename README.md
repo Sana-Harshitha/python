@@ -450,3 +450,209 @@ Python provides various built-in data types to store different kinds of data. He
   *Example:* `{"name": "Alice", "age": 25}`
 
 
+## 🔁 3. Control Flow
+
+Control flow statements allow us to control the execution of code blocks based on conditions or loops.
+
+---
+
+### ✅ Conditional Statements
+
+Python supports the standard `if`, `elif`, and `else` for decision-making.
+
+```python
+x = 10
+
+if x > 0:
+    print("Positive")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative")
+```
+
+---
+
+### 🔁 Loops
+
+#### 1. `for` Loop
+
+Used to iterate over a sequence (like a list, tuple, string, or range):
+
+```python
+for i in range(5):
+    print(i)
+```
+
+You can also iterate over items:
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+```
+
+#### 2. `while` Loop
+
+Executes a block of code as long as the condition is `True`.
+
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+```
+
+---
+
+### 🔂 Loop Control Statements
+
+#### 🔸 `break`
+
+Exits the loop immediately.
+
+```python
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+```
+
+#### 🔸 `continue`
+
+Skips the current iteration and moves to the next.
+
+```python
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+```
+
+#### 🔸 `pass`
+
+A placeholder used when a statement is syntactically required but no action is needed.
+
+```python
+for i in range(5):
+    pass  # TODO: implement later
+```
+
+---
+
+### ❗Nested Loops
+
+Loops within loops. Each inner loop completes all iterations before the outer loop moves to the next.
+
+```python
+for i in range(3):
+    for j in range(2):
+        print(f"i={i}, j={j}")
+```
+
+---
+
+### 🚨 `else` with Loops
+
+`else` block runs only if the loop completes without a `break`.
+
+```python
+for i in range(3):
+    print(i)
+else:
+    print("Loop finished without break")
+```
+
+```python
+for i in range(3):
+    if i == 1:
+        break
+    print(i)
+else:
+    print("This will not print because loop was broken")
+```
+
+---
+
+> ℹ️ **Note:** Python has no `do-while` loop.
+
+
+🔧 4. Functions
+Functions in Python are reusable blocks of code used to perform a specific task. They help in reducing code duplication and improving readability.
+
+✅ Defining a Function
+Use the def keyword:
+
+python
+Copy
+Edit
+def greet(name):
+    print(f"Hello, {name}!")
+Call the function:
+
+python
+Copy
+Edit
+greet("Alice")
+🧾 Function with Return
+python
+Copy
+Edit
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)  # Output: 8
+🧠 Types of Arguments
+Positional Arguments
+
+Keyword Arguments
+
+Default Arguments
+
+Variable-Length Arguments (*args, **kwargs)
+
+python
+Copy
+Edit
+def example(a, b=10):
+    print(a, b)
+
+example(5)            # Positional + default
+example(a=2, b=20)    # Keyword arguments
+🔢 *args and **kwargs
+*args: Accepts variable number of positional arguments
+
+**kwargs: Accepts variable number of keyword arguments
+
+python
+Copy
+Edit
+def show_args(*args, **kwargs):
+    print("Args:", args)
+    print("Kwargs:", kwargs)
+
+show_args(1, 2, 3, name="Alice", age=30)
+💡 Lambda Functions (Anonymous Functions)
+python
+Copy
+Edit
+square = lambda x: x * x
+print(square(4))  # Output: 16
+🧪 Built-in Functions Examples
+python
+Copy
+Edit
+print(len("Python"))        # 6
+print(sum([1, 2, 3]))        # 6
+print(max(5, 10, 20))        # 20
+🔁 Recursion
+python
+Copy
+Edit
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))  # Output: 120

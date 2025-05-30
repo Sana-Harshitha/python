@@ -3,6 +3,15 @@
 This repository contains my personal notes and code examples while revising Python. All key concepts are listed here with concise explanations and runnable code snippets.
 
 ---
+# ✅ Table of Contents
+
+- [🐍 Python Overview](#-python-overview)
+- [1. Basics](#1-basics)
+- [2. Data Types](#2-data-types)
+- [3. Control Flow](#3-control-flow)
+- [4. Functions](#4-functions)
+- [5. OOP – Object-Oriented Programming](#5-oop--object-oriented-programming)
+
 
 ## ✅ Table of Contents
 
@@ -869,7 +878,7 @@ from my_package.my_module import my_function
 
 
 
-# 7. File Handling
+# 7. File-Handling
 
 ---
 
@@ -970,4 +979,104 @@ with open("file.txt", "r+") as f:
 - Always close the file or use `with` statement.
 - Prefer `with` block for safe file handling.
 - Use `'rb'`, `'wb'` for binary files (e.g., images, audio).
+
+
+# 8. Error-Handling
+
+---
+
+### 🔍 What is Error Handling?
+
+Error handling allows your program to respond to runtime errors gracefully without crashing.
+
+---
+
+### ⚠️ Types of Errors
+
+- **SyntaxError** — Mistakes in code syntax.
+- **NameError** — Using undefined variables.
+- **TypeError** — Invalid operations between incompatible types.
+- **ValueError** — Passing wrong values to functions.
+- **IndexError** — Accessing invalid list index.
+- **KeyError** — Accessing non-existent dictionary key.
+- **ZeroDivisionError** — Division by zero.
+
+---
+
+### 🔧 Try-Except Block
+
+Catches and handles exceptions.
+
+```python
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+```
+
+---
+
+### 🧹 Finally Block
+
+Runs code regardless of exceptions, often for cleanup.
+
+```python
+try:
+    f = open("file.txt")
+    # do something
+except FileNotFoundError:
+    print("File not found!")
+finally:
+    f.close()
+```
+
+---
+
+### 🐞 Else Block
+
+Executes if no exceptions occur in the `try` block.
+
+```python
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input!")
+else:
+    print(f"You entered: {num}")
+```
+
+---
+
+### 🎯 Raising Exceptions
+
+You can manually raise exceptions using `raise`.
+
+```python
+def set_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+```
+
+---
+
+### 📋 Custom Exceptions
+
+Define your own exception classes by inheriting from `Exception`.
+
+```python
+class CustomError(Exception):
+    pass
+
+raise CustomError("This is a custom error")
+```
+
+---
+
+### 🧩 Common Exception Handling Tips
+
+- Catch specific exceptions, not general ones.
+- Use multiple except blocks for different errors.
+- Avoid bare `except:` without specifying error type.
+- Clean up resources in `finally` or use context managers (`with`).
+
 

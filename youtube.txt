@@ -1,0 +1,1 @@
+[{"name": "Learn Python", "time": "10:30"}, {"name": "Introduction to Js", "time": "23:34"}, {"name": "Python OOPs", "time": " 34:34"}, {"name": "Machine lerning", "time": " 30:45"}, {"name": "Artifical Intelligence ", "time": " 45:34"}, {"name": "Data analysis", "time": " 34:3"}, {"name": "Cloud Computing", "time": "45:35"}]

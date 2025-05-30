@@ -3,15 +3,6 @@
 This repository contains my personal notes and code examples while revising Python. All key concepts are listed here with concise explanations and runnable code snippets.
 
 ---
-# ✅ Table of Contents
-
-- [🐍 Python Overview](#-python-overview)
-- [1. Basics](#1-basics)
-- [2. Data Types](#2-data-types)
-- [3. Control Flow](#3-control-flow)
-- [4. Functions](#4-functions)
-- [5. OOP – Object-Oriented Programming](#5-oop--object-oriented-programming)
-
 
 ## ✅ Table of Contents
 
@@ -355,7 +346,7 @@ This is not an exhaustive list but covers the most frequently used keywords in P
 id(object)
 
 
-# 2. Data Types
+# 2. Data-Types
 
 
 Python provides various built-in data types to store different kinds of data. Here is a brief explanation of the most commonly used ones:
@@ -392,7 +383,7 @@ Python provides various built-in data types to store different kinds of data. He
   *Example:* `{"name": "Alice", "age": 25}`
 
 
-#  3. Control Flow
+#  3. Control-Flow
 
 Control flow statements allow us to control the execution of code blocks based on conditions or loops.
 
@@ -617,7 +608,7 @@ print(factorial(5))  # Output: 120
 ```
 
 
-# 5. OOP – Object-Oriented Programming
+# 5. OOP
 
 Python supports object-oriented programming to model real-world entities using classes and objects.
 
@@ -774,7 +765,7 @@ class Child(Parent):
 c = Child()
 c.show()
 ```
-# 6. Modules & Packages
+# 6. Modules--Packages
 
 ---
 
